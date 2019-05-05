@@ -1,0 +1,21 @@
+﻿<Window x:Class="HomeWorkBrowser.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HomeWorkBrowser"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="631.556" Width="1029.539">
+    <Grid x:Name="mainGrid">
+        <TabControl x:Name="browserControl" HorizontalAlignment="Left" Height="511" Margin="10,10,0,0" VerticalAlignment="Top" Width="989">
+            <TabItem x:Name="tabItem1" Header=" " Width="15" >
+                <Grid Background="#FFE5E5E5">
+                    <WebBrowser Source="https://www.google.com/search?q=" HorizontalAlignment="Left" Height="483" VerticalAlignment="Top" Width="983"/>
+                </Grid>
+            </TabItem>
+
+        </TabControl>
+        <Button x:Name="buttonPlus" Content="+" HorizontalAlignment="Left" Margin="27,10,0,0" VerticalAlignment="Top" Width="20" Click="ButtonClick" RenderTransformOrigin="-0.4,0.882" Height="23"/>
+
+    </Grid>
+</Window>
